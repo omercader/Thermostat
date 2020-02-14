@@ -1,0 +1,231 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5E34AD13
+P 2400 2900
+F 0 "J1" H 2508 3281 50  0000 C CNN
+F 1 "Switch_Panel_IN" H 2508 3190 50  0000 C CNN
+F 2 "" H 2400 2900 50  0001 C CNN
+F 3 "~" H 2400 2900 50  0001 C CNN
+	1    2400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E34BB0B
+P 3000 2650
+F 0 "#PWR?" H 3000 2500 50  0001 C CNN
+F 1 "+3V3" H 3015 2823 50  0000 C CNN
+F 2 "" H 3000 2650 50  0001 C CNN
+F 3 "" H 3000 2650 50  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2700 3000 2700
+Wire Wire Line
+	3000 2700 3000 2650
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5E34E73F
+P 4000 2950
+F 0 "SW1" H 4000 3235 50  0000 C CNN
+F 1 "SW_Push_Dual" H 4000 3144 50  0000 C CNN
+F 2 "" H 4000 3150 50  0001 C CNN
+F 3 "~" H 4000 3150 50  0001 C CNN
+	1    4000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW2
+U 1 1 5E350312
+P 4000 3550
+F 0 "SW2" H 4000 3835 50  0000 C CNN
+F 1 "SW_Push_Dual" H 4000 3744 50  0000 C CNN
+F 2 "" H 4000 3750 50  0001 C CNN
+F 3 "~" H 4000 3750 50  0001 C CNN
+	1    4000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW3
+U 1 1 5E350F89
+P 4000 4200
+F 0 "SW3" H 4000 4485 50  0000 C CNN
+F 1 "SW_Push_Dual" H 4000 4394 50  0000 C CNN
+F 2 "" H 4000 4400 50  0001 C CNN
+F 3 "~" H 4000 4400 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW4
+U 1 1 5E3522A4
+P 4000 4900
+F 0 "SW4" H 4000 5185 50  0000 C CNN
+F 1 "SW_Push_Dual" H 4000 5094 50  0000 C CNN
+F 2 "" H 4000 5100 50  0001 C CNN
+F 3 "~" H 4000 5100 50  0001 C CNN
+	1    4000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2700 3550 2700
+Wire Wire Line
+	3550 2700 3550 2950
+Wire Wire Line
+	3550 4900 3800 4900
+Connection ~ 3000 2700
+Wire Wire Line
+	3800 2950 3550 2950
+Connection ~ 3550 2950
+Wire Wire Line
+	3550 2950 3550 3550
+Wire Wire Line
+	3800 3550 3550 3550
+Connection ~ 3550 3550
+Wire Wire Line
+	3550 3550 3550 4200
+Wire Wire Line
+	3800 4200 3550 4200
+Connection ~ 3550 4200
+Wire Wire Line
+	3550 4200 3550 4900
+$Comp
+L Device:R R1
+U 1 1 5E358FFF
+P 4600 3100
+F 0 "R1" H 4670 3146 50  0000 L CNN
+F 1 "10k" H 4670 3055 50  0000 L CNN
+F 2 "" V 4530 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E359B5F
+P 4850 3700
+F 0 "R2" H 4920 3746 50  0000 L CNN
+F 1 "10k" H 4920 3655 50  0000 L CNN
+F 2 "" V 4780 3700 50  0001 C CNN
+F 3 "~" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E35A4AE
+P 5050 4350
+F 0 "R3" H 5120 4396 50  0000 L CNN
+F 1 "10k" H 5120 4305 50  0000 L CNN
+F 2 "" V 4980 4350 50  0001 C CNN
+F 3 "~" H 5050 4350 50  0001 C CNN
+	1    5050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E35B09F
+P 5300 5050
+F 0 "R4" H 5370 5096 50  0000 L CNN
+F 1 "10k" H 5370 5005 50  0000 L CNN
+F 2 "" V 5230 5050 50  0001 C CNN
+F 3 "~" H 5300 5050 50  0001 C CNN
+	1    5300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E35BBB2
+P 5300 5400
+F 0 "#PWR?" H 5300 5150 50  0001 C CNN
+F 1 "GND" H 5305 5227 50  0000 C CNN
+F 2 "" H 5300 5400 50  0001 C CNN
+F 3 "" H 5300 5400 50  0001 C CNN
+	1    5300 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4900 5300 4900
+Wire Wire Line
+	5300 5200 5300 5400
+Wire Wire Line
+	5050 4500 5050 5400
+Wire Wire Line
+	5050 5400 5300 5400
+Connection ~ 5300 5400
+Wire Wire Line
+	4850 5400 5050 5400
+Connection ~ 5050 5400
+Wire Wire Line
+	4850 3850 4850 5400
+Wire Wire Line
+	4600 5400 4850 5400
+Connection ~ 4850 5400
+Wire Wire Line
+	4600 3250 4600 5400
+Wire Wire Line
+	4200 2950 4600 2950
+Wire Wire Line
+	4200 3550 4850 3550
+Wire Wire Line
+	4200 4200 5050 4200
+Wire Wire Line
+	4600 2950 5500 2950
+Connection ~ 4600 2950
+Wire Wire Line
+	4850 3550 5500 3550
+Connection ~ 4850 3550
+Wire Wire Line
+	5050 4200 5500 4200
+Connection ~ 5050 4200
+Wire Wire Line
+	5300 4900 5500 4900
+Connection ~ 5300 4900
+Wire Wire Line
+	3350 2800 3350 5400
+Wire Wire Line
+	3350 5400 4600 5400
+Wire Wire Line
+	2600 2800 3350 2800
+Connection ~ 4600 5400
+Text GLabel 5500 2950 2    50   Input ~ 0
+SW1
+Text GLabel 5500 3550 2    50   Input ~ 0
+SW2
+Text GLabel 5500 4200 2    50   Input ~ 0
+SW3
+Text GLabel 5500 4900 2    50   Input ~ 0
+SW4
+Wire Wire Line
+	2600 2900 2700 2900
+Wire Wire Line
+	2600 3000 2700 3000
+Wire Wire Line
+	2600 3100 2700 3100
+Wire Wire Line
+	2600 3200 2700 3200
+Text GLabel 2700 2900 2    50   Input ~ 0
+SW1
+Text GLabel 2700 3000 2    50   Input ~ 0
+SW2
+Text GLabel 2700 3100 2    50   Input ~ 0
+SW3
+Text GLabel 2700 3200 2    50   Input ~ 0
+SW4
+$EndSCHEMATC
